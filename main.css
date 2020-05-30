@@ -375,12 +375,14 @@ footer a {
 @media screen and (max-width: 400px) {
   body {
     background-color: rgb(241, 213, 213);
-  }
-}
-
+    @media screen and (min-width:400px) and (max-width: 778px) {
+        body {
+          background-color: rgb(230, 246, 247);
+        }
+    }
 
 @media screen and (min-width:400px) and (max-width: 778px) {
-    body {
-      background-color: rgb(230, 246, 247);
-    }
+  body {
+    background-color: rgb(230, 246, 247);
+  }
 }
