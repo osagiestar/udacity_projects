@@ -371,3 +371,9 @@ footer a {
   text-decoration: none;
   color: #333;
 }
+
+@media screen and (min-width: 400px) {
+  body {
+    background-color: red;
+  }
+}
