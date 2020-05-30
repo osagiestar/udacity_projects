@@ -265,7 +265,7 @@ main {
 
 .weather {
   float: right;
-  width: 320px;
+  width: 100%;
   padding: 1em;
 }
 
@@ -372,7 +372,7 @@ footer a {
   color: #333;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (max-width: 400px) {
   body {
     background-color: red;
   }
