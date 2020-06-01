@@ -142,7 +142,7 @@ main {
   width: 100%;
   position: relative;
   background-image: url("./images/dog.jpg");
-  background-size: cover;
+  background-size: auto;
   height: 300px;
   display: flex;
   flex-wrap: wrap;
@@ -382,54 +382,58 @@ footer a {
   color: #333;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   body {
     background-color: rgb(241, 213, 213);
   }
 }
 
-@media screen and (min-width:450px) and (max-width: 600px) {
+@media screen and (min-width: 500px) and (max-width: 700px) {
   body {
     background-color: rgb(230, 246, 247);
   }
 }
 
-@media screen and (min-width: 450px) and (max-width: 600px) {
-  .hero {
-    width: 75%;
-  }
-  .top-news { 
-    width: 25%;
-  }
-  .weather {
-    width: 100%;
+@media screen and (min-width: 700px) {
+  body {
+    background-color: rgb(242, 247, 218);
   }
 }
 
-@media screen and (min-width: 600px) and (max-width: 750px) {
+@media screen and (min-width: 500px) and (max-width: 700px) {
   .hero {
-    width: 75%;
+    order: 0;
+    width: 60%;
+  }
+  .top-news { 
+    order: 1;
+    width: 40%;
+  }
+  .weather {
+  width: 100%;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .hero {
+    width: 50%;
   }
   
   .top-news {
-    width: 25%;
+    order: 1;
+    width: 50%;
   }
 
-  .weather, .recent-news {
+  .scores {
+    order: 2;
     width: 50%;
   }
 }
 
-@media screen and (min-width: 750px) {
-  .hero {
-    width: 75%;
-  }
-  
-  .top-news {
-    width: 25%;
-  }
-
-  .scores {
-    width: 100%;
-  }
+@media screen and (min-width: 900px) {
+    .main {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    }
 }
