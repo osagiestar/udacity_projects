@@ -39,7 +39,6 @@ ul {
   text-decoration: none;
 }
 
-
 /*
  *
  * Header
@@ -112,7 +111,6 @@ ul {
   color: #212121;
 }
 
-
 /*
  *
  * Main
@@ -146,6 +144,8 @@ main {
   background-image: url("./images/dog.jpg");
   background-size: cover;
   height: 300px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .hero article {
@@ -173,6 +173,8 @@ main {
   height: 300px;
   border-bottom: 1px solid #E0E0E0;
   padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .news__title {
@@ -180,6 +182,8 @@ main {
   border-bottom: 1px solid #E0E0E0;
   line-height: 24px;
   font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .top-news__item {
@@ -218,6 +222,8 @@ main {
   width: 100%;
   float: left;
   padding-top: 1em;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .scores__table {
@@ -267,6 +273,8 @@ main {
   float: right;
   width: 100%;
   padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .weather__location {
@@ -322,6 +330,8 @@ main {
 .recent-news {
   clear: both;
   padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .snippet {
@@ -372,14 +382,54 @@ footer a {
   color: #333;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   body {
     background-color: rgb(241, 213, 213);
   }
 }
 
-@media screen and (min-width:400px) and (max-width: 778px) {
+@media screen and (min-width:450px) and (max-width: 600px) {
   body {
     background-color: rgb(230, 246, 247);
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 600px) {
+  .hero {
+    width: 75%;
+  }
+  .top-news { 
+    width: 25%;
+  }
+  .weather {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 750px) {
+  .hero {
+    width: 75%;
+  }
+  
+  .top-news {
+    width: 25%;
+  }
+
+  .weather, .recent-news {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .hero {
+    width: 75%;
+  }
+  
+  .top-news {
+    width: 25%;
+  }
+
+  .scores {
+    width: 100%;
   }
 }
